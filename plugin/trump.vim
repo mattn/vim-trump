@@ -22,9 +22,6 @@ augroup Trump
   au BufWritePre * call <SID>check_america_is_great()
 augroup END
 
-function! s:check_import_something()
-endfunction
-
 function! s:check_america_is_great()
   if getline('$') !~ 'America is Great'
     throw "Why you doesn't love America?"
